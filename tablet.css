@@ -20,6 +20,14 @@
         box-sizing: border-box;
     }
     
+    /* Removing default styling of anchor tag */
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+    }
+
+
     /* Remove default margin */
     html,
     body,
