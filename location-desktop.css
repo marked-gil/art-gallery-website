@@ -1,0 +1,208 @@
+/* Variables */
+:root {
+    font-size: 16px;
+    --clr-whiskey: #d5966c;
+    --clr-nero: #151515;
+    --clr-charcoal: #444444;
+    --clr-white: #ffffff;
+    --font-BigShouldersDisplay: 'Big Shoulders Display', Helvetica, sans-serif;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* || Resetting ||*/
+/* Box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Removing default styling of anchor tag */
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+/* Remove default margin */
+html,
+body,
+nav,
+div,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* COMPONENTS */
+
+body {
+    width: 100%;
+}
+
+h1,
+.art-gallery-textSpan {
+    font-family: var(--font-BigShouldersDisplay);
+    text-transform: uppercase;
+}
+
+.map-Section {
+    position: relative;
+}
+
+.backHome-OuterWrapper {
+    display: flex;
+    position: absolute;
+    left: 9.75rem;
+}
+
+.backHome-InnerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-nero);
+    color: var(--clr-white);
+    width: 13rem;
+    height: 4.5rem;
+}
+
+.backHome-InnerWrapper h1 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+}
+
+.leftArrow-Container {
+    background-color: var(--clr-whiskey);
+    width: 3.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-Wrapper {
+    width: 100%;
+}
+
+.map-Image {
+    display: block;
+    width: 100%;
+}
+
+.address-Section {
+    background-color: var(--clr-nero);
+    padding: 6.5rem 10.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+.ourLocation-Header {
+    font-size: 3.45rem;
+    font-weight: 800;
+    width: 14rem;
+    color: var(--clr-white);
+}
+
+.address-Street {
+    display: block;
+    color: var(--clr-whiskey);
+    text-transform: uppercase;
+    font-family: var(--font-BigShouldersDisplay);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.address span:not(:first-child) {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--clr-white);
+    line-height: 1.75rem;
+}
+
+.advisory {
+    color: var(--clr-white);
+    margin-top: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    grid-column: 2 / 3;
+    width: 27rem;
+}
+    @media (min-width: 1500px) {
+        .ourLocation-Header {
+            width: 18rem;
+        }
+        .address-Section {
+            padding: 6.5rem 12%;
+        }
+        .advisory {
+            width: auto;
+        }
+    }
+
+    @media (min-width: 1700px) {
+        .address-Section {
+            padding: 6.5rem 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .address-Street {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+        .advisory {
+            margin-top: 0;
+            width: 27rem;
+        }
+    }
+
+footer {
+    background-color: var(--clr-whiskey);
+    color: var(--clr-nero);
+    padding: 3.5rem 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-MainTitle {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.art-gallery-textSpan {
+    display: block;
+}
+
+.footer-Description {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.socialMedia-icons {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+}
+
+.socialMedia-icons img{
+    filter: invert(1);
+    margin-left: 1rem;
+}
