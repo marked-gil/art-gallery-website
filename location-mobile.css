@@ -96,8 +96,19 @@ h1,
 
 .address-Section {
     background-color: var(--clr-nero);
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
 }
+    @media (min-width: 500px) {
+        .address-Section {
+            padding: 3rem 7%;
+        }
+    }
+
+    /* @media (min-width: 600px) {
+        .address-Section {
+            padding: 3rem 10%;
+        }
+    } */
 
 .ourLocation-Header {
     font-size: 3.125rem;
@@ -117,14 +128,14 @@ h1,
 
 .address span:not(:first-child) {
     display: block;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     color: var(--clr-white);
     line-height: 1.75rem;
 }
 
 .advisory {
     margin-top: 1.25rem;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.75rem;
     color: var(--clr-white);
 }
@@ -142,6 +153,9 @@ footer {
 .footer-MainTitle {
     font-size: 1.75rem;
     line-height: 1.75rem;
+}
+.art-gallery-textSpan {
+    display: block;
 }
 
 .footer-Description {
